@@ -67,7 +67,7 @@ describe('Teste de API em produtos', () => {
                     url: `produtos/${id}`,
                     headers: { authorization: token }
                 }).should(resp => {
-                    expect(resp.body.massage).to.equal('Nenhum registro excluído')
+                    expect(resp.body.message).to.equal('Nenhum registro excluído')
                     expect(resp.status).to.equal(200)
                 })
             })
